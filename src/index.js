@@ -1,32 +1,35 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./datas/data.json";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Logement from "./pages/Logement";
-import Error from "./pages/Error";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Logement from "./pages/logement";
+import Error from "./pages/error";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/A-Propos">
-        <About />
-      </Route>
-      <Route exact path="/Logement">
-        <Logement />
-      </Route>
-      <Route path="/404">
-        <Error />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/A-Propos">
+          <About />
+        </Route>
+        <Route path="/Logement/:id">
+          <Logement />
+        </Route>
+        <Route>
+          <Error />
+        </Route>
+      </Switch>
       <Footer />
     </Router>
   </React.StrictMode>

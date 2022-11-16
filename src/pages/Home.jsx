@@ -1,7 +1,6 @@
-
+import Banner from "../components/banner"
 function Home() {
-  const title = "Kasa";
-  return <h1>{title}</h1>;
+  return <Banner/> ;
 }
 
 export default Home;
