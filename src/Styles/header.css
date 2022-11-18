@@ -1,101 +1,94 @@
 .k-logo {
-    position: absolute;
-    right: 83.04%;
+  position: absolute;
+  right: 83.04%;
 }
 
 .k-nav {
-    left: 931px;
-    top: 17px;
-    height: 34px;
-    width: 309px;
+  left: 931px;
+  top: 17px;
+  height: 34px;
+  width: 309px;
 }
 
 .k-accueil {
-    position: absolute;
-left: 75.08%;
-right: 13.95%;
-top: 25%;
-bottom: 25%;
+  position: absolute;
+  left: 75.08%;
+  right: 13.95%;
+  top: 25%;
+  bottom: 25%;
 
-text-decoration-line: underline;
+  text-decoration-line: underline;
 
-color: #FF6060;
+  color: #ff6060;
 }
 
 .k-about {
-    position: absolute;
-left: 90.65%;
-right: 0%;
-top: 25%;
-bottom: 25%;
+  position: absolute;
+  left: 90.65%;
+  right: 0%;
+  top: 25%;
+  bottom: 25%;
 }
 
 .k-font {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
-    
-    
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    
-    color: #FF6060;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+
+  color: #ff6060;
 }
 .k-header {
-    position: absolute;
-width: 1240px;
-height: 68px;
-left: 100px;
-top: 40px;
+  position: absolute;
+  width: 1240px;
+  height: 68px;
+  left: 100px;
+  top: 40px;
 }
 
-@media screen and (max-width: 498px){
-    .k-header {
-        
-        width: 335px;
-        height: 47px;
-        left: 20px;
-        top: 20px;        
-    }
-    .k-logo {
-        
-        left: 0%;
-        right: 56.72%;
-        top: 0%;
-        bottom: 0%;
-        width: 145px;
-        height: 47px;
-    }    
-    .k-nav {
-      
-        left: 58.21%;
-        right: 0%;
-        top: 38.3%;
-        bottom: 25.53%;
-       
-    }
-    .k-accueil {
-        
-        left: 58.21%;
-        right: 24.18%;
-        top: 38.3%;
-        bottom: 25.53%;
+@media screen and (max-width: 498px) {
+  .k-header {
+    width: 335px;
+    height: 47px;
+    left: 20px;
+    top: 20px;
+  }
+  .k-logo {
+    left: 0%;
+    right: 56.72%;
+    top: 0%;
+    bottom: 0%;
+    width: 145px;
+    height: 47px;
+  }
+  .k-nav {
+    left: 58.21%;
+    right: 0%;
+    top: 38.3%;
+    bottom: 25.53%;
+  }
+  .k-accueil {
+    left: 58.21%;
+    right: 24.18%;
+    top: 38.3%;
+    bottom: 25.53%;
 
-        text-decoration-line: underline;
-    } 
-    .k-about{
+    text-decoration-line: underline;
+  }
+  .k-about {
+    left: 78.81%;
+    right: 0%;
+    top: 38.3%;
+    bottom: 25.53%;
+  }
 
-        left: 78.81%;
-        right: 0%;
-        top: 38.3%;
-        bottom: 25.53%;
-    }
-
-.k-font{
-    font-family: 'Montserrat';
+  .k-font {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -105,6 +98,6 @@ top: 40px;
     align-items: flex-end;
     text-align: right;
 
-    color: #FF6060;
-}
+    color: #ff6060;
+  }
 }
