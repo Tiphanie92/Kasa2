@@ -1,9 +1,11 @@
+import Carousel from "../components/carousel";
+
 function Logement() {
-    return (
-        <div>
-            <h1>Fiche logement</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Carousel />
+    </div>
+  );
 }
 
-export default Logement
+export default Logement;

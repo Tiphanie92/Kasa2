@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  margin-left: 208px;
+  margin-right: 208px;
+}
+
+.accordion {
+  width: 1023px;
+  height: 184px;
+  left: 208px;
+}
+
+.title {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  background: #ff6060;
+  border-radius: 5px;
+}
+.titre {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  color: #ffffff;
+  margin: 10px;
+}
+.content {
+  max-height: 0;
+  background: #f6f6f6;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  /* or 34px */
+  margin-bottom: 25px;
+}
+
+.content.show {
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  border-radius: 5px;
+}
+
+.texte {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142.6%;
+  /* or 34px */
+  line-height: 142.6%;
+  color: #ff6060;
+  padding: 10px 10px 10px 10px;
+}
+
+.active {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.desactive {
+  cursor: pointer;
+}

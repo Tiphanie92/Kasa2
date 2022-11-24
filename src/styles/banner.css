@@ -1,8 +1,7 @@
 .k-banner {
   width: 1240px;
-  height: 1095px;
+  height: 400px;
   left: 100px;
-  top: 171px;
 }
 
 .k-banner__titre {
@@ -30,13 +29,15 @@
   width: 1240px;
   height: 223px;
   left: 100px;
-  top: 171px;
+  top: 152px;
 
   background: #f7f7f7;
   border-radius: 25px;
   filter: brightness(70%);
 }
-
+.k-banner__mobile {
+  display: none;
+}
 @media screen and (max-width: 498px) {
   .k-banner {
     width: 335px;
@@ -69,7 +70,19 @@
     height: 111px;
     left: 20px;
     top: 83px;
-
+    display: none;
+    background: #f7f7f7;
+    border-radius: 10px;
+  }
+  .k-banner__mobile {
+    display: flex;
+  }
+  .k-banners__logo {
+    position: absolute;
+    width: 336px;
+    height: 223px;
+    left: 20px;
+    top: 84px;
     background: #f7f7f7;
     border-radius: 10px;
   }
