@@ -16,7 +16,7 @@ function Collapse() {
       <div className="accordion">
         {data.map((item, i) => (
           <div className="item">
-            <div className="title">
+            <div className="fond-title">
               <h2 className="titre">{item.titre}</h2>
               <span onClick={() => toggle(i)}>
                 {selected === i ? (
