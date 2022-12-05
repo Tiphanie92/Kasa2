@@ -1,134 +1,55 @@
 .k-error__titre {
-  position: absolute;
-  width: 597px;
-  height: 263px;
-  left: 432px;
-  top: 50px;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 288px;
-  line-height: 142.6%;
-  /* or 411px */
-
   display: flex;
-  align-items: center;
-  text-align: center;
-
+  justify-content: center;
+  margin: 10%;
+  margin-bottom: 0;
   color: #ff6060;
 }
 
 .k-error__text {
-  position: absolute;
-  left: 20.49%;
-  right: 18.96%;
-  top: 59.18%;
-  bottom: 35.84%;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 35px;
-  line-height: 142.6%;
-  /* or 51px */
 
   display: flex;
-  align-items: flex-end;
-
+  justify-content: center;
   color: #ff6060;
-}
-
-.k-error {
-  position: relative;
-  width: 1440px;
-  height: 1024px;
+  margin: 30px;
+  margin-bottom: 10px;
 }
 
 .k-error__accueil {
-  position: absolute;
-  left: 40.14%;
-  right: 40.14%;
-  top: 81.93%;
-  bottom: 15.53%;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 142.6%;
-  /* identical to box height, or 26px */
 
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
   text-decoration-line: underline;
-
+  margin: 150px;
   color: #ff6060;
 }
 
 @media screen and (max-width: 498px) {
-  .k-error {
-    position: relative;
-    width: 375px;
-    height: 812px;
-  }
   .k-error__titre {
-    position: absolute;
-
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 700;
     font-size: 96px;
-    line-height: 142.6%;
-    /* or 137px */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    width: 198px;
-    height: 99px;
-    left: 88px;
-    top: 170px;
+    margin: 50% 0 0 0;
   }
   .k-error__text {
-    position: absolute;
-    left: 15.2%;
-    right: 15.47%;
-    top: 45.81%;
-    bottom: 47.78%;
-
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
     font-size: 18px;
-    line-height: 142.6%;
-    /* or 26px */
-
-    display: flex;
-    align-items: flex-end;
     text-align: center;
-
-    color: #ff6060;
+    margin: 0 50px;
   }
   .k-error__accueil {
-    position: absolute;
-    left: 20.27%;
-    right: 20.8%;
-    top: 68.6%;
-    bottom: 28.94%;
-
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
-    line-height: 142.6%;
-    /* identical to box height, or 20px */
-
-    display: flex;
-    align-items: flex-end;
-    text-decoration-line: underline;
-
-    color: #ff6060;
+    margin: 30% 0 50% 0;
+    text-align: center;
   }
 }

@@ -4,7 +4,7 @@ import Card from "../components/card";
 function Home() {
   return (
     <div>
-      <Banner />
+      <Banner url="home" />
       <Card />
     </div>
   );

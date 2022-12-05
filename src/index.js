@@ -30,7 +30,7 @@ root.render(
           <Error />
         </Route>
       </Switch>
-      <Footer />
     </Router>
+    <Footer />
   </React.StrictMode>
 );

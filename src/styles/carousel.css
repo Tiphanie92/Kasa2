@@ -1,50 +1,43 @@
 .slider {
   position: relative;
   height: 415px;
-  width: 1240px;
-  left: 100px;
-  top: 128px;
+  margin: 5%;
+  margin-top: 0;
 }
-
 .image {
-  width: 1240px;
+  width: 100%;
   height: 415px;
   border-radius: 25px;
   object-fit: cover;
   position: absolute;
 }
-
 .right-arrow {
   position: absolute;
   top: 45%;
-  right: 0%;
   left: 96%;
-  bottom: 37.24%;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  max-width: 4%;
 }
 
 .left-arrow {
   position: absolute;
   top: 45%;
-  left: 0%;
-  right: 92.26%;
-  bottom: 35.44%;
+  right: 96%;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  max-width: 4%;
 }
 
 .slide {
   opacity: 0;
-  transition-duration: 1s;
-  transition: ease;
+  margin: 3%;
 }
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1s;
   transform: scale(1.08);
 }
 
@@ -57,8 +50,64 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-
-  /* or 26px */
-
   color: white;
+}
+
+@media screen and (max-width: 498px) {
+  .slider {
+    position: relative;
+    height: 415px;
+    margin: 5%;
+  }
+  .image {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+    position: absolute;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 45%;
+    left: 93%;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .left-arrow {
+    position: absolute;
+    top: 45%;
+
+    right: 93%;
+
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .slide {
+    opacity: 0;
+    transition-duration: 1s;
+    transition: ease;
+    margin: 3%;
+  }
+
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+
+  .numbers {
+    position: absolute;
+    left: 48.95%;
+    right: 49.11%;
+    top: 370px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+  }
 }

@@ -5,7 +5,9 @@ import "../styles/header.css";
 function Header() {
   return (
     <div className="k-header">
-      <img src={LOGO} alt="Kasa" className="k-logo" />
+      <div className="k-width">
+        <img src={LOGO} alt="Kasa" className="k-logo" />
+      </div>
       <nav className="k-nav">
         <Link className="k-accueil k-font" to="/">
           Accueil
