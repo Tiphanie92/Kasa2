@@ -3,10 +3,9 @@ import ArrowRight from "../assets/arrowRight.png";
 import ArrowLeft from "../assets/arrowLeft.png";
 import { useState } from "react";
 
-function Carousel(pictures) {
+function Carousel(json) {
   const [current, setCurrent] = useState(0);
-  let length = pictures;
-  console.log(pictures);
+  let length = json.pictures.length;
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -16,18 +15,27 @@ function Carousel(pictures) {
   };
 
   return (
-    <div className="slider">
-      <img src={ArrowLeft} className="left-arrow" onClick={prevSlide} />
-      <img src={ArrowRight} className="right-arrow" onClick={nextSlide} />
-      {pictures.pictures.map((subRowData, k) => (
-        <div className={k === current ? "slide active" : "slide"} key={k}>
-          <img src={subRowData} alt="" className="image" />
-
-          <span className="numbers">
-            {current + 1}/{pictures.pictures.length}
-          </span>
+    <div className="slides">
+      <div className="slider">
+        <div className={json.pictures.length <= 1 ? "displaySlider" : ""}>
+          <img src={ArrowLeft} className="left-arrow" onClick={prevSlide} />
+          <img src={ArrowRight} className="right-arrow" onClick={nextSlide} />
         </div>
-      ))}
+
+        {json.pictures.map((subRowData, k) => (
+          <div className={k === current ? "slide active" : "slide"} key={k}>
+            <img src={subRowData} alt="" className="image" />
+
+            <span
+              className={
+                json.pictures.length <= 1 ? "displaySlider" : "numbers"
+              }
+            >
+              {current + 1}/{json.pictures.length}
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

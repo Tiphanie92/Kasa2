@@ -1,0 +1,37 @@
+.hostName {
+  display: flex;
+  margin-right: 10px;
+  max-width: 80px;
+  text-align: end;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+}
+
+.picture {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+.hostPicture {
+  background: #c4c4c4;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+@media screen and (max-width: 498px) {
+  .hostName {
+    font-size: 12px;
+    margin: 0;
+    margin-right: 5px;
+    max-width: 60px;
+  }
+
+  .hostPicture {
+    height: 32px;
+    width: 32px;
+  }
+}

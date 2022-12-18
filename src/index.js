@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./datas/data.json";
 
 import Header from "./components/header";
@@ -16,20 +16,12 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/A-Propos">
-          <About />
-        </Route>
-        <Route path="/Logement/:id">
-          <Logement />
-        </Route>
-        <Route>
-          <Error />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/A-Propos" element={<About />} />
+        <Route path="/Logement/:id" element={<Logement />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
     </Router>
     <Footer />
   </React.StrictMode>

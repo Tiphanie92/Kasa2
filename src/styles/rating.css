@@ -1,0 +1,21 @@
+.backgroundRating {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.rating {
+}
+
+@media screen and (max-width: 498px) {
+  .backgroundRating {
+    justify-content: flex-start;
+    margin: 0 0 2% 5%;
+    position: absolute;
+  }
+
+  .star {
+    height: 15px;
+    width: 15px;
+  }
+}

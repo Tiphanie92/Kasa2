@@ -1,0 +1,37 @@
+.tag {
+  background: #ff6068;
+  border-radius: 10px;
+  height: 25px;
+  width: 135px;
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.background {
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+}
+
+@media screen and (max-width: 498px) {
+  .background {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 4%;
+  }
+
+  .tag {
+    font-size: 10px;
+    border-radius: 5px;
+  }
+}

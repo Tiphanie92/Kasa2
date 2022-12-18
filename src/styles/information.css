@@ -1,0 +1,28 @@
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+  margin: 0;
+}
+
+.location {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  margin: 0;
+}
+
+@media screen and (max-width: 498px) {
+  .title {
+    font-size: 18px;
+    max-width: 300px;
+  }
+
+  .location {
+    font-size: 14px;
+  }
+}
