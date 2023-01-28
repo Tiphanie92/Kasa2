@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 import "./datas/data.json";
 
 import Header from "./components/header";
@@ -17,10 +22,12 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route element={<Navigate replace to="/Accueil" />} path="/Kasa2" />
+        <Route element={<Navigate replace to="/Accueil" />} path="/" />
+        <Route exact path="/Accueil" element={<Home />} />
         <Route path="/A-Propos" element={<About />} />
         <Route path="/Logement/:id" element={<Logement />} />
-        <Route path="*" element={<Error />} status={404} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
     <Footer />
