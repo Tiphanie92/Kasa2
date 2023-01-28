@@ -14,7 +14,7 @@ function About() {
 
 const data = [
   {
-    titre: "Fiabilité",
+    titre: "Fiabilités",
     texte:
       "Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux logements, et toutes les informations sont réguliérement vérifiées par nos équipes.",
   },
