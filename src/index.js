@@ -22,7 +22,7 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route element={<Navigate replace to="/Accueil" />} path="/Kasa2/" />
+        <Route element={<Navigate replace to="/Accueil" />} path="/Kasa2" />
         <Route element={<Navigate replace to="/Accueil" />} path="/" />
         <Route exact path="/Accueil" element={<Home />} />
         <Route path="/A-Propos" element={<About />} />
