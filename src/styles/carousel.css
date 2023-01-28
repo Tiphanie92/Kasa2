@@ -38,13 +38,11 @@
 .slide {
   opacity: 0;
   transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
 }
 
 .slide.active {
   opacity: 1;
   transform: translateX(0%);
-  transition: transform 0.5s ease-in-out;
 }
 
 .numbers {

@@ -27,11 +27,26 @@
   .background {
     position: relative;
     margin-top: 10px;
-    margin-right: 4%;
+    flex-wrap: wrap;
+    display: inline-flex;
+    gap: 5px;
   }
 
   .tag {
     font-size: 10px;
     border-radius: 5px;
+    margin-right: 2px;
+  }
+}
+
+@media screen and (min-width: 498px) and (max-width: 768px) {
+  .background {
+    flex-wrap: wrap;
+    display: inline-flex;
+    gap: 5px;
+    max-width: 60%;
+  }
+  .tag {
+    margin-right: 2px;
   }
 }
