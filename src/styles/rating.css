@@ -2,16 +2,15 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 5%;
-}
-
-.rating {
+  position: absolute;
+  width: 100%;
 }
 
 @media screen and (max-width: 498px) {
   .backgroundRating {
     justify-content: flex-start;
-    margin: 0 0 2% 5%;
-    position: absolute;
+    margin: 5% 0 0% 0%;
+    position: relative;
   }
 
   .star {

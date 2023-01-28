@@ -1,7 +1,7 @@
 .slider {
   position: relative;
   height: 415px;
-  margin: 2%;
+  margin: 0 5% 2% 5%;
   margin-top: 0;
 }
 
@@ -18,7 +18,7 @@
 .right-arrow {
   position: absolute;
   top: 45%;
-  left: 92%;
+  left: 95%;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -28,7 +28,7 @@
 .left-arrow {
   position: absolute;
   top: 45%;
-  right: 92%;
+  right: 95%;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -37,8 +37,7 @@
 
 .slide {
   opacity: 0;
-  margin: 3%;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -59,8 +58,7 @@
   font-size: 18px;
   color: white;
 }
-.slides {
-}
+
 @media screen and (max-width: 498px) {
   .slider {
     height: 255px;
@@ -89,7 +87,7 @@
   }
 
   .numbers {
-    display: none;
-    color: black;
+    top: 220px;
+    font-size: 14px;
   }
 }

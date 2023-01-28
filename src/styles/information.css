@@ -5,6 +5,7 @@
   font-size: 36px;
   color: #ff6060;
   margin: 0;
+  max-width: 80%;
 }
 
 .location {
@@ -13,7 +14,7 @@
   font-weight: 500;
   font-size: 18px;
   color: #ff6060;
-  margin: 0;
+  margin: 5px 0 5px 0;
 }
 
 @media screen and (max-width: 498px) {

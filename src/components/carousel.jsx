@@ -18,8 +18,18 @@ function Carousel(json) {
     <div className="slides">
       <div className="slider">
         <div className={json.pictures.length <= 1 ? "displaySlider" : ""}>
-          <img src={ArrowLeft} className="left-arrow" onClick={prevSlide} />
-          <img src={ArrowRight} className="right-arrow" onClick={nextSlide} />
+          <img
+            src={ArrowLeft}
+            className="left-arrow"
+            onClick={prevSlide}
+            alt="précédent"
+          />
+          <img
+            src={ArrowRight}
+            className="right-arrow"
+            onClick={nextSlide}
+            alt="suivant"
+          />
         </div>
 
         {json.pictures.map((subRowData, k) => (

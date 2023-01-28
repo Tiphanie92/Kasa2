@@ -9,9 +9,9 @@ function Rating(rating) {
       {arrayRating.map((star, i) => (
         <span className="rating" key={i}>
           {star <= rating.ratings ? (
-            <img src={fullstars} className="star"></img>
+            <img src={fullstars} className="star" alt="star"></img>
           ) : (
-            <img src={stars} className="star"></img>
+            <img src={stars} className="star" alt="star"></img>
           )}
         </span>
       ))}

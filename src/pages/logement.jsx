@@ -16,16 +16,16 @@ function Logement() {
   if (!error) return <Error />;
   return (
     <div className="fond">
-      {url.map((item, i) => (
-        <div key={i}>
-          <Carousel pictures={item.pictures} key={i} />
+      <div></div>
+      {url.map((item) => (
+        <div key={item.id}>
+          <Carousel pictures={item.pictures} key={item.id} />
           <div>
-            <div className="information">
-              <Information title={item.title} location={item.location} />
-              <Tag tags={item.tags} />
-            </div>
+            <div className="information"></div>
             <div className="host">
+              <Information title={item.title} location={item.location} />
               <Host host={item.host} />
+              <Tag tags={item.tags} />
               <Rating ratings={item.rating} />
             </div>
             <div className="collapse">

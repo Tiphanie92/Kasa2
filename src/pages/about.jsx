@@ -1,9 +1,9 @@
 import Banner from "../components/banner";
 import Collapse from "../components/collapse";
-
+import "../styles/about.css";
 function About() {
   return (
-    <div>
+    <div className="about">
       <Banner url="about" />
       {data.map((item, i) => (
         <Collapse titre={item.titre} texte={item.texte} key={i} />

@@ -12,7 +12,7 @@ function Card() {
               className="k-card"
               key={postData.id}
             >
-              <img src={postData.cover} className="k-cover" alt="" />
+              <img src={postData.cover} className="k-cover" alt="cover" />
               <h2 className="k-title">{postData.title}</h2>
             </Link>
           );
